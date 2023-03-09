@@ -673,8 +673,9 @@ hr {
   top: 15px;
   background: #6070ff;
   color: #fff;
+  font-size: 25px;
   cursor: pointer;
-  padding-right: 38px;
+  padding-right: 35px;
   right: 3px;
   width: 12px;
   height: 12px;
