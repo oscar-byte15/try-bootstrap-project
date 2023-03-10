@@ -20,54 +20,35 @@
 
  <body>
     <div class="all">
-        <header class="header">
-          <nav class=" navbar navbar-expand-xl scrolling-navbar fixed-top" >
-            <a class="navbar-brand" href="#">Oscar</a>
-            <span></span>
-            <div clss="container-fluid" >
-              <div class="items_nav" id="navbar" data-spy="scroll" data-target="#navbar-example" >
-                <ul class="items_navbar_ul ul flex">
-                  <li class="items_navbar_li">
-                    <a class="nav-link active" aria-current="page" href="#works">Portfolio</a>
+      <div id="shadow-blue"></div>
+      <div id="menuMobileid" class="menuMobile">
+          <ul>
+              <li><a href="#works"  class="mobile-item">Portfolio</a></li>
+              <li><a href="#about" class="mobile-item">About</a></li>
+              <li><a href="#reach_me" class="mobile-item">Contact</a></li>
+          </ul>
+      </div>
+      <header>
+          <a href="#" id="logo">Oscar</a>
+          <nav>
+              <button id="hamburgerBtn" class="navHamburger" >
+                  <span class="navHamburger1"></span>
+                  <span class="navHamburger2"></span>
+                  <span class="navHamburger3"></span>
+              </button>
+              <ul class="nav-links">
+                  <li>
+                      <a href="#works">Portfolio</a>
                   </li>
-                  <li class="items_navbar_li">
-                    <a class="nav-link" href="#about">About</a>
+                  <li>
+                      <a href="#about">About</a>
                   </li>
-                  <li class="items_navbar_li">
-                    <a class="nav-link" href="#reach_me">Contact</a>
+                  <li>
+                      <a href="#reach_me">Contact</a>
                   </li>
-                </ul>
-              </div>
-            </div>
-            <button class="navbar-toggler" id ="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-              <label for="btn-menu">
-              <img class="navbar_hamburger" src="images/hamburguer.png" alt="hamburguer icon" />
-            </label>
-            </button>
+              </ul>
           </nav>
-        </header>
-
-        <input type="checkbox" id="btn-menu">
-       <div id ="container-menu" class="container-menu">
-	     <div id= "cont-menu" class="cont-menu">
-		  <nav >
-        <div class="linki">
-          <a href="#works" id ="portfolio"  >Portfolio</a>
-        </div>
-      
-			<a href="#about" id ="about" >About</a>
-			<a href="#reach_me" id ="contact">Contact</a>
-
-		  </nav>
-     
-        <div id="bu_x">
-          <label class="bu_x"  for="btn-menu">X</label>
-        </div>
-        
-     
-        
-	  </div>
-    </div>
+      </header>
     
         <section class="head">
           <h1 class="title__h">

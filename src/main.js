@@ -1,35 +1,19 @@
-const overlay = document.getElementById('container-menu');
-const overlay2 = document.getElementById('cont-menu');
-const port = document.getElementById('portfolio');
-const about = document.getElementById('about');
-const contact = document.getElementById('contact');
-const bChecked = document.getElementById('btn-menu');
-function navToggle() {
-  if (bChecked.checked) {
-    overlay.classList.toggle('visible');
-    overlay2.classList.toggle('visible');
-  }
-}
-function navToggle2() {
-  if (bChecked.checked) {
-    overlay.classList.toggle('visible');
-    overlay2.classList.toggle('visible');
-  }
-}
-function navToggle3() {
-  if (bChecked.checked) {
-    overlay.classList.toggle('visible');
-    overlay2.classList.toggle('visible');
-  }
-}
+const menuBtn = document.getElementById('hamburgerBtn');
+const shadowBlue = document.getElementById('shadow-blue');
+const menuMobile = document.getElementById('menuMobileid');
 
-port.addEventListener('click', navToggle);
-about.addEventListener('click', navToggle2);
-contact.addEventListener('click', navToggle3);
-
+function clickChange() {
+  shadowBlue.classList.toggle('shadow-blue-show');
+  menuBtn.classList.toggle('transforming');
+  menuMobile.classList.toggle('visibleMenu');
+  document.body.classList.toggle('stop-scrolling');
+}
 document.documentElement.addEventListener('click', (e) => {
-  if (e.target.matches('.menu-item')) {
-    overlay.classList.remove('visible');
-    overlay2.classList.remove('visible');
+  if (e.target.matches('.mobile-item')) {
+    menuMobile.classList.remove('visibleMenu');
+    document.body.classList.remove('stop-scrolling');
+    menuBtn.classList.remove('transforming');
+    shadowBlue.classList.remove('shadow-blue-show');
   }
 });
+menuBtn.addEventListener('click', clickChange);
