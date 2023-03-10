@@ -1,25 +1,35 @@
-window.onload = () => {
-  const port = document.getElementById('portfolio');
-  const about = document.getElementById('about');
-  const contact = document.getElementById('contact');
-  let cont = 0;
-
-  function cambio() {
-    if (cont === 0) {
-      document.getElementById('cont-menu').style.transform = 'translateX(-100%)';
-      document.getElementById('cont-menu').style.position = 'relative';
-      document.getElementById('btn-menu').style.position = 'absolute';
-      // document.getElementById('cont-menu').style.= '1';
-      cont = 1;
-    } else {
-      document.getElementById('cont-menu').style.visibility = 'visible';
-      document.getElementById('cont-menu').style.width = '100%';
-      document.getElementById('btn-menu').style.position = 'absolute';
-    }
-  // document.getElementById('btn-menu').style.checked= "hidden";
+const overlay = document.getElementById('container-menu');
+const overlay2 = document.getElementById('cont-menu');
+const port = document.getElementById('portfolio');
+const about = document.getElementById('about');
+const contact = document.getElementById('contact');
+const bChecked = document.getElementById('btn-menu');
+function navToggle() {
+  if (bChecked.checked) {
+    overlay.classList.toggle('visible');
+    overlay2.classList.toggle('visible');
   }
+}
+function navToggle2() {
+  if (bChecked.checked) {
+    overlay.classList.toggle('visible');
+    overlay2.classList.toggle('visible');
+  }
+}
+function navToggle3() {
+  if (bChecked.checked) {
+    overlay.classList.toggle('visible');
+    overlay2.classList.toggle('visible');
+  }
+}
 
-  port.addEventListener('click', cambio, true);
-  about.addEventListener('click', cambio, true);
-  contact.addEventListener('click', cambio, true);
-};
+port.addEventListener('click', navToggle);
+about.addEventListener('click', navToggle2);
+contact.addEventListener('click', navToggle3);
+
+document.documentElement.addEventListener('click', (e) => {
+  if (e.target.matches('.menu-item')) {
+    overlay.classList.remove('visible');
+    overlay2.classList.remove('visible');
+  }
+});

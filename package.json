@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KanzaTahreem/Portfolio-Website.git"
+    "url": "git+https://github.com/oscar-byte15/try-bootstrap-project.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/KanzaTahreem/Portfolio-Website/issues"
+    "url": "https://github.com/oscar-byte15/try-bootstrap-project/issues"
   },
-  "homepage": "https://github.com/KanzaTahreem/Portfolio-Website#readme",
+  "homepage": "https://github.com/oscar-byte15/try-bootstrap-project#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
