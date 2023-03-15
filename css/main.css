@@ -1148,12 +1148,12 @@ hr {
   }
 
   .block2 .span {
-    width: 298px;
+    width: 290px;
     height: 0;
     border: 1px solid #ebecf0;
     visibility: visible;
     margin-top: 15%;
-    margin-left: 8%;
+    margin-left: 2.5%;
   }
 }
 
@@ -1417,7 +1417,8 @@ hr {
     border: 1px solid #ebecf0;
     visibility: visible;
     margin-top: 10%;
-    margin-left: 8%;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: -10%;
   }
 }
@@ -1750,7 +1751,7 @@ hr {
     padding-top: 10px;
     margin-right: 0;
     float: left;
-    width: 70%;
+    width: 60%;
     display: flex;
     margin-top: 6%;
   }
@@ -1759,12 +1760,12 @@ hr {
     float: right;
     flex-wrap: wrap;
     height: 100%;
-    width: 30%;
+    width: 40%;
     margin-top: 5.5%;
   }
 
   .card-skills {
-    width: 90%;
+    width: 100%;
     height: 100%;
     margin-top: 3.5%;
     float: right;
@@ -1790,6 +1791,7 @@ hr {
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
+    width: 150px;
   }
 
   .form_t {
@@ -1884,6 +1886,17 @@ hr {
   .reach_me button:active {
     background-color: #2230d2;
     color: #fff;
+  }
+
+  .block2 .span {
+    width: 303px;
+    height: 0;
+    border: 1px solid #ebecf0;
+    visibility: visible;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
   }
 }
 
