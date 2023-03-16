@@ -102,7 +102,7 @@ header {
 .navHamburger1 {
   position: absolute;
   width: 20px;
-  height: 2px;
+  height: 3px;
   top: 0;
   left: 0;
   background-color: #6070ff;
@@ -642,7 +642,9 @@ hr {
   margin-bottom: 50px;
 }
 
-.div-wrap .form-paragraph { margin-bottom: 24px; }
+.div-wrap .form-paragraph {
+  margin-bottom: 24px;
+}
 
 .reach_me input {
   font-family: Poppins, sans-serif;
@@ -856,7 +858,7 @@ hr {
   height: 100%;
   z-index: 1;
   background-color: #6070ff;
-  opacity: 0.75;
+  opacity: 0.80;
 }
 
 .shadow-blue-trans {
@@ -895,15 +897,15 @@ hr {
 }
 
 .visibleMenu {
-  transform: translateX(0);
+  transform: translateX(-1);
 }
 
-#btn-menu:checked ~ .container-menu {
+#btn-menu:checked~.container-menu {
   opacity: 1;
   visibility: visible;
 }
 
-#btn-menu:checked ~ .container-menu .cont-menu {
+#btn-menu:checked~.container-menu .cont-menu {
   transform: translateX(0%);
 }
 
@@ -1815,7 +1817,9 @@ hr {
     font-style: normal;
   }
 
-  .div-wrap .form-paragraph { margin-bottom: 40px; }
+  .div-wrap .form-paragraph {
+    margin-bottom: 40px;
+  }
 
   .card-skills ul li {
     float: left;
@@ -1887,66 +1891,3 @@ hr {
     background-color: #2230d2;
     color: #fff;
   }
-
-  .block2 .span {
-    width: 303px;
-    height: 0;
-    border: 1px solid #ebecf0;
-    visibility: visible;
-    margin-top: 10%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1%;
-  }
-}
-
-.popup {
-  position: absolute;
-  z-index: 6;
-  top: 10%;
-  background-color: #fff;
-  height: auto;
-  width: 88%;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-.popup-header {
-  display: flex;
-  justify-content: space-between;
-}
-
-.popup-btn button {
-  align-items: center;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  margin-right: 10px;
-  margin-left: 3px;
-}
-
-.popup-header button {
-  border: none;
-  background: transparent;
-  cursor: pointer;
-}
-
-.popup-description {
-  flex-direction: column;
-  background-color: #fff;
-  width: 100%;
-  display: inline;
-  margin-top: 4%;
-  margin-bottom: 5%;
-}
-
-.popup .div-img {
-  margin-bottom: -18%;
-}
-
-#popup-img {
-  width: 94%;
-  height: auto;
-}
