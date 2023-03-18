@@ -218,3 +218,12 @@ document.documentElement.addEventListener('click', (e) => {
     shadowBlue.classList.toggle('shadow-blue-trans');
   }
 });
+
+formId.addEventListener('submit', (e) => {
+  if (emailId.value !== emailId.value.toLowerCase()) {
+    e.preventDefault();
+    messageFail.textContent = 'Please, input the email in lowercase!';
+  } else {
+    messageFail.textContent = '';
+  }
+});
